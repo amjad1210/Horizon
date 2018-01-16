@@ -1,0 +1,8 @@
+export const OPEN_WINDOW = 'OPEN_WINDOW'
+
+export const DRAG_WINDOW = "DRAG_WINDOW";
+export const RESIZE_WINDOW = "RESIZE_WINDOW";
+
+export const MINIMIZE_WINDOW = 'MINIMIZE_WINDOW'
+export const MAXIMIZE_WINDOW = 'MAXIMIZE_WINDOW'
+export const CLOSE_WINDOW = 'CLOSE_WINDOW'

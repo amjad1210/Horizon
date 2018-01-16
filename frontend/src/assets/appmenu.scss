@@ -1,0 +1,16 @@
+.ui.dimmer>.content>* {
+  vertical-align: top !important;
+  padding-top: 100px;
+}
+
+.ui.icon.header {
+  display: inline-block !important;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.3);
+}

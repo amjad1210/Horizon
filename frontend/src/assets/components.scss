@@ -1,0 +1,166 @@
+.components {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .toolbar.menu {
+    background: rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+
+    .taskbar {
+      width: 100%;
+
+      .active.item {
+        opacity: 1;
+        color: white;
+        background: rgba(0, 0, 0, .40);
+      }
+
+      .item {
+        opacity: 0.5;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 1;
+          background: rgba(0, 0, 0, .20);
+        }
+      }
+    }
+
+    .search {
+      padding-top: 5px;
+    }
+
+    .user {
+      background: rgba(38, 38, 38, 0.60) !important;
+    }
+
+    .item {
+      color: white;
+
+      &::before {
+        display: none;
+      }
+
+      &:hover {
+        color: white !important;
+      }
+
+      &.brand {
+        font-weight: 100;
+        -webkit-font-smoothing: antialiased;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  .desktop {
+    position: absolute;
+    width: 100%;
+    top: 42px;
+    bottom: 0px;
+
+    .react-draggable-dragging {
+      //opacity: 0.8;
+    }
+
+    .window {
+      cursor: default !important;
+
+      .title {
+        background: linear-gradient(0deg, #d8d8d8, #ececec);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        width: 100%;
+        height: 25px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 25px;
+
+        .buttons {
+          height: 25px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: flex;
+          align-items: center;
+
+          .button {
+            margin-right: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+          }
+
+          .minimize {
+            background-color: rgb(255, 191, 47);
+
+            &:hover {
+              background-color: rgb(230, 166, 22);
+            }
+
+            &:active {
+              background-color: rgb(204, 140, 0);
+            }
+          }
+
+          .maximize {
+            background-color: rgb(37, 204, 62);
+
+            &:hover {
+              background-color: rgb(12, 179, 37);
+            }
+
+            &:active {
+              background-color: rgb(0, 153, 11);
+            }
+          }
+
+          .close {
+            background-color: rgb(255, 97, 89);
+
+            &:hover {
+              background-color: rgb(230, 72, 64);
+            }
+
+            &:active {
+              background-color: rgb(204, 46, 38);
+            }
+          }
+        }
+      }
+
+      .body {
+        position: absolute;
+        width: 100%;
+        top: 25px;
+        bottom: 0px;
+        background: #ecf0f1;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 11px;
+    color: white;
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
