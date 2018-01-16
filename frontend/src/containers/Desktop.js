@@ -5,11 +5,13 @@ import { connect } from 'react-redux'
 
 import WindowManager from '../components/Window/WindowManager'
 
+import NetworkWindow from '../components/Windows/NetworkWindow'
+
 import * as WindowActions from '../actions/WindowActions'
 
 const Desktop = ({openedWindows, actions}) => (
   <div className='desktop'>
-    <WindowManager openedWindows={openedWindows} actions={actions}/>
+    <NetworkWindow/>
   </div>
 )
 

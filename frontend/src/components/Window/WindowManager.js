@@ -21,7 +21,8 @@ class WindowManager extends PureComponent {
     })
 
     return (
-      {renderWindows}
+      <div>
+      </div>
     )
   }
 }
